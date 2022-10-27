@@ -11,7 +11,7 @@ class SearchBar extends HTMLElement {
         this.innerHTML =
             `
         <div class="flex mt-4 flex-row lg:justify-start justify-between p-4 mx-2">
-        <div><p class="text-3xl lg:ml-8 font-bold ml-1 rounded-md text-white">Cyber News</p></div>
+        <div><p class="text-base mt-2 md:text-3xl md:mt-0 lg:ml-8 font-bold ml-1 rounded-md text-white">Cyber News</p></div>
         <div>
             <form action="submit">  
             <input class="p-2 bg-slate-400/20 lg:ml-4 rounded-md shadow-sm" type="text" name="search" placeholder="Search" id="">

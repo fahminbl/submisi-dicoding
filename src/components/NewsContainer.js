@@ -1,20 +1,28 @@
 // lihat instruksi di NewsCard
-
+import './NewsItem.js'
 class NewsContainer extends HTMLElement {
     constructor() {
         super()
     }
+    
+    renderError(message) {
+        this.innerHTML = '';
+        this.innerHTML += `<h2>${message}</h2>`;
+    }
 
-    connectedCallback() {
+    set news(news) {
+        this._news = news;
         this.render()
     }
 
     render() {
-        this.innerHTML = `
-        div className="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">
-          <div className="flex flex-row ml-2 flex-wrap ">
-          </div>
-          </div>`
+        this.innerHTML = '';
+        this._news.forEach(item => {
+            const newsItemElement = document.createElement('news-item');
+            newsItemElement.classList.add("w-full","p-3","overflow-hidden","rounded","shadow-lg","md:w-1/2","lg:w-1/3")
+            newsItemElement.item = item;
+            this.appendChild(newsItemElement);
+        })
     }
 }
 
