@@ -10,9 +10,25 @@ class NewsContainer extends HTMLElement {
         this.innerHTML += `<h2>${message}</h2>`;
     }
 
+    set news2(news) {
+        this._news2 = news;
+        this.implant();
+    }
+
     set news(news) {
         this._news = news;
-        this.render()
+        this.render();
+    }
+
+
+    implant() {
+        this.innerHTML = '';
+        this._news2.forEach(item => {
+            const newsItemElement = document.createElement('news-item');
+            newsItemElement.classList.add("w-full","p-3","overflow-hidden","rounded","shadow-lg","md:w-1/2","lg:w-1/3")
+            newsItemElement.item2 = item;
+            this.appendChild(newsItemElement);
+        })
     }
 
     render() {
