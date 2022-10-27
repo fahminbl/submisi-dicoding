@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Edgerunner</title>
-    <link rel="stylesheet" href="/dist/output.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Edge</title>
+  <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header></header>
+
+<body
+  style="font-family: Inter var,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;"
+  class="antialiased bg-slate-900 container">
+  <header class="sticky top-0 z-10">
+    <nav-bar></nav-bar>
+  </header>
+  <main>
+    <search-bar></search-bar>
+    <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-white leading-normal">
+      <div class="flex flex-row ml-2 flex-wrap ">
+        <div class="w-full p-3 overflow-hidden rounded shadow-lg md:w-1/2 lg:w-1/3"><img alt="media" class="w-full" src="https://static01.nyt.com/images/2022/10/26/business/26BIGTECH-microsoft/merlin_174848253_d02fd49e-58c5-4e18-884c-6a84b3a1e7c5-threeByTwoSmallAt2X.jpg">
+          <div class="px-6 py-4">
+            <div class="mb-2 text-xl font-bold"><button>Tech’s Biggest Companies Are Sending Worrying Signals About the
+                Economy</button></div>
+            <p class="text-base text-gray-700">A series of quarterly earnings reports is showing that even Silicon
+              Valley’s most powerful companies are feeling the impact of inflation and rising interest rates.</p>
+          </div>
+          <div class="px-6 pt-4 pb-2"><span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#technology</span><span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="index.js" type="module"></script>
 </body>
+
 </html>
