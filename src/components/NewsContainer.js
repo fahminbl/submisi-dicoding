@@ -1,5 +1,4 @@
-// lihat instruksi di NewsCard
-import './NewsItem.js'
+import './NewsItem.js';
 class NewsContainer extends HTMLElement {
     constructor() {
         super()
@@ -23,7 +22,7 @@ class NewsContainer extends HTMLElement {
 
     implant() {
         this.innerHTML = '';
-        this._news2.forEach(item => {
+        this._news2.map(item => {
             const newsItemElement = document.createElement('news-item');
             newsItemElement.classList.add("w-full","p-3","overflow-hidden","rounded","shadow-lg","md:w-1/2","lg:w-1/3")
             newsItemElement.item2 = item;
@@ -33,7 +32,7 @@ class NewsContainer extends HTMLElement {
 
     render() {
         this.innerHTML = '';
-        this._news.forEach(item => {
+        this._news.map(item => {
             const newsItemElement = document.createElement('news-item');
             newsItemElement.classList.add("w-full","p-3","overflow-hidden","rounded","shadow-lg","md:w-1/2","lg:w-1/3")
             newsItemElement.item = item;

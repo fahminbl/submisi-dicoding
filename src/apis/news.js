@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiKey = "YLdlbszdEWk3OJjGGUcefYtUG7uSZMto";
+const apiKey = "59br60u7LQrbRufaFjGFKKyPI7iajEnW";
 class NewsProvider {
     static async searchNews(keyword) {
         try {
