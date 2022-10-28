@@ -1,4 +1,4 @@
 # submisi-dicoding
 submisi dicoding yah bro
-
-# <a href"https://news-edgerunners.netlify.app">Link Aplikasi</a>
+# Link ke aplikasi
+[link](doc:news-edgerunners#https://news-edgerunners.netlify.app)
